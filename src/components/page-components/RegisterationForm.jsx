@@ -4,7 +4,7 @@ import Button from '../Button'
 import FormGroup from '../FormGroup';
 
 
-export default function RegisterationForm({handleCancel, showLogin, registered, handleRegistration}) {
+export default function RegisterationForm({handleCancel, showLogin}) {
 
 // references
 let fullName = useRef();
