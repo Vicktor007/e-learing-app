@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "img": "img-1",
+        "fullName": "John Doe",
+        "jobTitle": "Cloud-storage Developer",
+        "titterHandle": "@johndoe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolor labore eveniet. Eligendi iure praesentium esse excepturi nisi asperiores earum nemo unde suscipit optio, laborum nam ab animi sint corporis?"
+
+    },
+
+    {
+        "id": 2,
+        "img": "img-2",
+        "fullName": "Dan Doe",
+        "jobTitle": "junior Developer",
+        "titterHandle": "@janedoe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolor labore eveniet. Eligendi iure praesentium esse excepturi nisi asperiores earum nemo unde suscipit optio, laborum nam ab animi sint corporis?"
+
+    },
+
+    {
+        "id": 3,
+        "img": "img-3",
+        "fullName": "Aisha Doe",
+        "jobTitle": "Backend Developer",
+        "titterHandle": "@dandoe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolor labore eveniet. Eligendi iure praesentium esse excepturi nisi asperiores earum nemo unde suscipit optio, laborum nam ab animi sint corporis?"
+
+    }
+]

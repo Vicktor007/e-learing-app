@@ -1,42 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -118,7 +79,7 @@ a {
   color: #000;
 }
 
-.form .btn {
+form .btn {
   color: #eee;
 }
 
@@ -246,7 +207,7 @@ a {
   text-align: center;
 }
 
-.categories-container .card .i {
+.categories-container .card i {
   font-size: 4rem;
   border-radius: 10%;
   padding: 0.5rem;
@@ -255,48 +216,48 @@ a {
   transition: var(--transition);
 }
 
-.categories-container .card .i:hover {
+.categories-container .card i:hover {
   background-color: #fff;
   transition: var(--transition);
 }
 
-.categories-container .card .i:hover.fa-html5 {
+.categories-container .card i:hover.fa-html5 {
   color: var(--html-color);
 }
 
-.categories-container .card .i:hover.fa-css3 {
+.categories-container .card i:hover.fa-css3 {
   color: var(--css-color);
 }
 
-.categories-container .card .i:hover.fa-js {
+.categories-container .card i:hover.fa-js {
   color: var(--js-color);
 }
 
-.categories-container .card .i:hover.fa-python {
+.categories-container .card i:hover.fa-python {
   color: var(--python-color);
 }
 
-.categories-container .card .i:hover.fa-java {
+.categories-container .card i:hover.fa-java {
   color: var(--java-color);
 }
 
-.categories-container .card .i:hover.fa-react {
+.categories-container .card i:hover.fa-react {
   color: var(--react-color);
 }
 
-.categories-container .card .i:hover.fa-r-project {
+.categories-container .card i:hover.fa-r-project {
   color: var(--r-color);
 }
 
-.categories-container .card .i:hover.fa-file-excel {
+.categories-container .card i:hover.fa-file-excel {
   color: var(--microsoft-excel-color);
 }
 
-.categories-container .card .i:hover.fa-people-group {
+.categories-container .card i:hover.fa-people-group {
   color: var(--microsoft-teams-color);
 }
 
-.categories-container .card .i:hover.fa-database {
+.categories-container .card i:hover.fa-database {
   color: var(--sql-color);
 }
 
@@ -318,8 +279,8 @@ a {
   transition: 0.3s ease-out;
 }
 
-.offers-container .card .i,
-.testimonials-container .card .i {
+.offers-container .card i,
+.testimonials-container .card i {
   font-size: 4rem;
   background-color: var(--secondary-color);
   color: #fff;
@@ -369,7 +330,7 @@ a {
   grid-area: testimonial-4;
 }
 
-.testimonials-container .card .i {
+.testimonials-container .card i {
   background-color: transparent;
   color: inherit;
   border-radius: 0;
@@ -467,7 +428,7 @@ a {
   margin-bottom: 2rem;
 }
 
-#welcome .header .i {
+#welcome .header i {
   font-size: 10rem;
   border-radius: 10%;
   padding: 0.5rem;
@@ -479,7 +440,7 @@ a {
   animation: pulse 3s ease-in-out infinite;
 }
 
-#welcome .header .i:hover {
+#welcome .header i:hover {
   background-color: #fff;
   color: var(--primary-color);
   transition: var(--transition);
@@ -559,9 +520,9 @@ p {
     grid-template-columns: 1fr;
     grid-template-areas: "testimonial-1" "testimonial-2" "testimonial-3" "testimonial-4";
   }
-  .offers-container .card .i,
-  .testimonials-container .card .i,
-  .testimonials-container .card .i {
+  .offers-container .card i,
+  .testimonials-container .card i,
+  .testimonials-container .card i {
     font-size: 3rem;
     transition: var(--transition);
   }
@@ -585,8 +546,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* display: none; */
-  z-index: 100;
+  display: none;
 }
 
 .modal-content {
@@ -607,35 +567,4 @@ p {
   background-color: #333;
   color: #fff;
   cursor: pointer;
-}
-
-.icon {
-  border-radius: 5px;
-  background-color: #7633f9;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-
-.html5:hover {
-  color: red;
-  background-color: white;
-}
-
-.css3:hover {
-  color: lawngreen;
-  background-color: white;
-}
-
-.js:hover{
-  color: yellow;
-  background-color: white;
-}
-
-.react:hover {
-  color: #7cc5d9;
-  background-color: white;
-}
-
-.form {
-  background-color: white;
-  margin: auto;
-  border-radius: 10px;
 }
