@@ -3,12 +3,11 @@ import React,{ useState, useEffect } from 'react'
 // Data
 import testimonialData from "../../database/testimonials-list.json"
 import TestimonialCard from '../page-components/TestimonialCard';
-import Button from '../Button';
 import ErrorBoundaries from '../Custom/Hooks/ErrorBoundaries';
 
 export default function TestimonialsList() {
-    const [testimonials, setTestimonials] = useState(() => {
-         return JSON.parse(localStorage.getItem("testimonialData"));});
+   //  const [testimonials, setTestimonials] = useState(() => {
+   //       return JSON.parse(localStorage.getItem("testimonialData"));});
 
          const [data, setData] = useState(null);
          const [isLoading, setIsLoading] = useState(true);
