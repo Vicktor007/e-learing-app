@@ -67,12 +67,13 @@ export default function Contact() {
 
             <div className="form-group">
               <label for="subject">Subject</label>
-              {/* <textarea
+              <textarea
                 id="subject"
                 name="subject"
                 placeholder="Write something.."
-                style={{width: 100% height: 300 padding: "1rem"}}
-              ></textarea> */}
+                style={{width:'100%', height:"300px", padding:"1rem"}}
+                // style={{width: 100%, height: 300,padding: "1rem"}}
+              ></textarea>
             </div>
             <div className="form-group">
               <button className="btn btn-primary" type="submit">Submit</button>

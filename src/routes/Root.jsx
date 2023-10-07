@@ -1,8 +1,8 @@
 import React from "react";
-import RefactoredApp from "../RefactoredApp";
+// import RefactoredApp from "../RefactoredApp";
 // Icons
 import { FaBars } from "react-icons/fa";
-import { Outlet, Link, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 export default function Root() {
   return (
     <>
@@ -17,15 +17,15 @@ export default function Root() {
         </div>
         <div className="navbar-collapse">
           <ul className="navbar-nav me-auto">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href={`/home/`}>
                 Home
               </a>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
               <Link to={`/home/`}>Home</Link>
             </li> */}
-            {/* <NavLink
+            <NavLink
               to={`/home/`}
               className={({ isActive }) =>
                 isActive ? "nav-item active" : "nav-item"
@@ -33,6 +33,7 @@ export default function Root() {
             >
               Home
             </NavLink>
+            
             <NavLink
               to={`about`}
               className={({ isActive }) =>
@@ -40,21 +41,28 @@ export default function Root() {
               }
             >
               About
-            </NavLink> */}
-            <li className="nav-item">
-              {/* <a className="nav-link" href={`/contact/`}>
+            </NavLink>
+{/* 
+<li className="nav-item">
+              <a className="nav-link" href={`/About/`}>
+               About
+              </a>
+            </li> */}
+
+            {/* <li className="nav-item">
+              <a className="nav-link" href={`/contact/`}>
                 Contact
-              </a> */}
+              </a>
               <Link to={`/contact/`}>Contact</Link>
-            </li>
-            {/* <NavLink
+            </li> */}
+            <NavLink
               to={`/contact/`}
               className={({ isActive }) =>
                 isActive ? "nav-item active" : "nav-item"
               }
             >
               Contact
-            </NavLink> */}
+            </NavLink>
 
             <li className="nav-item">
               <a className="nav-link" href="./Pages/logIn.html">
@@ -69,7 +77,7 @@ export default function Root() {
           </ul>
         </div>
       </nav>
-      <RefactoredApp />
+      {/* <RefactoredApp /> */}
       <Outlet />
     </>
   );
