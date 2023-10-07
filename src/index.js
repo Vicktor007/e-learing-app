@@ -12,6 +12,9 @@ import Contact from './routes/Contact';
 import ErrorPage from './Error-Page';
 import Home from './routes/Home';
 import About from './routes/About';
+import Index from './routes/Index';
+import RegisterationForm from './components/page-components/RegisterationForm';
+import LoginForm from './components/page-components/LoginForm';
 
 
 // create a router
@@ -24,6 +27,12 @@ const router = createBrowserRouter([
 
     errorElement: <ErrorPage/>,
     children:[
+
+      {
+        index:true,
+        element: <Index/>
+        
+      },
       {
         path: "Home",
         element: <Home/>
@@ -36,6 +45,16 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact/>
+      },
+
+      {
+        path: "login",
+        element: <LoginForm/>
+      },
+
+      {
+        path: "register",
+        element: <RegisterationForm/>
       }
     ]
   },

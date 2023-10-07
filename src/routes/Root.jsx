@@ -64,7 +64,27 @@ export default function Root() {
               Contact
             </NavLink>
 
-            <li className="nav-item">
+            <NavLink
+              to={`/login/`}
+              className={({ isActive }) =>
+                isActive ? "nav-item active" : "nav-item"
+              }
+            >
+              Login
+            </NavLink>
+
+            <NavLink
+              to={`/register/`}
+              className={({ isActive }) =>
+                isActive ? "nav-item active" : "nav-item"
+              }
+            >
+              Register
+            </NavLink>
+
+            
+
+            {/* <li className="nav-item">
               <a className="nav-link" href="./Pages/logIn.html">
                 Log in
               </a>
@@ -73,7 +93,7 @@ export default function Root() {
               <a className="nav-link" href="./Pages/register.html">
                 Register
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
