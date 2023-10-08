@@ -8,9 +8,19 @@ export default function Root() {
     <>
       <nav className="navbar bg-primary text-light mb-3">
         <div className="navbar-logo">
-          <a className="navbar-brand">
+          {/* <a className="navbar-brand">
+            <span className="logo">mm</span> Education
+          </a> */}
+          <NavLink
+              to={`/home/`}
+              className={({ isActive }) =>
+                isActive ? "nav-item active" : "nav-item"
+              }
+            >
+             <a className="navbar-brand">
             <span className="logo">mm</span> Education
           </a>
+            </NavLink>
           <button className="navbar-toggler btn btn-sm btn-close-white">
             <FaBars />
           </button>

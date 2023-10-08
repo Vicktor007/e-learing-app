@@ -19,6 +19,8 @@ const [registration, setRegistration] = useState({
     passwordConfirmation:"",
 })
 
+
+
 // handlers
 const handleInputChange=(e)=>{
     setRegistration({...registration,[e.target.name]:e.target.value})
@@ -62,6 +64,8 @@ const handleInputChange=(e)=>{
             passwordConfirmation:"",
         })
     }
+
+    
       
   return (
     <div className='form fadeIn' style={ {maxWidth:500, minHeight: 500} }>
@@ -71,6 +75,7 @@ const handleInputChange=(e)=>{
       text={"x"}
       style={{ position: "absolute", top: 70, right: 30 }}
       onClick={handleCancel}
+      
       />
 <form onSubmit={handleRegistration}>
     <FormGroup 
