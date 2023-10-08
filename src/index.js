@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 // import RefactoredApp from "./RefactoredApp"
+// import FruitsApp from './Examples/Context/FruitsApp';
 
 // routing
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -15,6 +16,7 @@ import About from './routes/About';
 import Index from './routes/Index';
 import RegisterationForm from './components/page-components/RegisterationForm';
 import LoginForm from './components/page-components/LoginForm';
+import ThemeWrapper from './components/context/ThemeWrapper';
 
 
 // create a router
@@ -75,7 +77,12 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+<ThemeWrapper> 
+
   <React.StrictMode>
     <RouterProvider router={router}/>
+    {/* <FruitsApp/> */}
   </React.StrictMode>
+  
+</ThemeWrapper>
 );

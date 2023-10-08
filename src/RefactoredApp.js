@@ -114,7 +114,7 @@ const topRef = useRef()
   return (
     <>
     
-    <div className="conatainer container-lg" ref={topRef}>
+    <div className="conatainer container-lg " ref={topRef}>
       {/* header */}
         <Header login={login} 
         handleScrollToOffers={handleScrollToOffers} 

@@ -8,7 +8,7 @@ import headerImg from "../img/header-img.png";
 
 export default function Header({children, login, handleScrollToOffers, handleStarLearningEvent}) {
   return (
-    <header className='header d-flex'>
+    <header className='header d-flex text-center'>
        <div className="headercontent mb-2">
 
 <Title 

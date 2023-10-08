@@ -69,6 +69,17 @@ a {
   --sql-color: #a5a5a5;
 }
 
+/* Themes */
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
 /* Navigation */
 .navbar {
   width: 100%;
@@ -88,7 +99,15 @@ a {
   color: var(--primary-color);
   padding: 0.6rem 0.3rem;
   border-radius: 50%;
+  transition: all 0.25s ease-in-out;
 }
+
+.navbar-brand .logo:hover {
+  background-color: #000;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 
 .navbar-nav {
   width: 500px;
@@ -635,7 +654,7 @@ p {
 }
 
 .form {
-  background-color: white;
+  /* background-color: white; */
   margin: auto;
   border-radius: 10px;
 }

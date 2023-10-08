@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 // import RefactoredApp from "../RefactoredApp";
 // Icons
 import { FaBars } from "react-icons/fa";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
+
+import { ThemeContext, themes } from "../components/context/themeContext";
+
+
 export default function Root() {
+  const [darkMode, setDarkMode] = useState("");
+  const {changeTheme} =useContext(ThemeContext);
+
+  const handleChangeTheme = () => {
+    setDarkMode(!darkMode);
+    changeTheme(darkMode ?  themes.light : themes.dark);
+  };
   return (
     <>
       <nav className="navbar bg-primary text-light mb-3">
         <div className="navbar-logo">
-          {/* <a className="navbar-brand">
-            <span className="logo">mm</span> Education
-          </a> */}
-          <NavLink
+          <a className="navbar-brand">
+            <span className="logo" onClick={handleChangeTheme}>mm</span> <Link to={`/home/`}>Education</Link>
+          </a>
+          {/* <NavLink
               to={`/home/`}
               className={({ isActive }) =>
                 isActive ? "nav-item active" : "nav-item"
@@ -20,7 +31,7 @@ export default function Root() {
              <a className="navbar-brand">
             <span className="logo">mm</span> Education
           </a>
-            </NavLink>
+            </NavLink> */}
           <button className="navbar-toggler btn btn-sm btn-close-white">
             <FaBars />
           </button>
