@@ -80,6 +80,10 @@ a {
   color: #fff;
 }
 
+.dark {
+  color: #ff9800;
+}
+
 /* Navigation */
 .navbar {
   width: 100%;
@@ -253,11 +257,15 @@ a {
   justify-content: space-around;
 }
 
-.categories-container .card ul li {
+.categories-ul {
   margin-left: 2rem;
   list-style-type: disc;
   font-weight: 700;
   color: var(--primary-color);
+}
+
+.categories-ul.dark {
+  color: #ff9800;
 }
 
 .categories-container .card-title {
@@ -329,6 +337,17 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+}
+
+.offers-container {
+  background-color: #eee;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.offers-container.dark {
+  background-color: #000;
 }
 
 .offers-container .card,
@@ -657,4 +676,14 @@ p {
   /* background-color: white; */
   margin: auto;
   border-radius: 10px;
+}
+
+.gototopArrow {
+  transition: all 0.25s ease-in-out;
+
+}
+
+.gototopArrow:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }

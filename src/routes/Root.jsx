@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-// import RefactoredApp from "../RefactoredApp";
+import RefactoredApp from "../RefactoredApp";
 // Icons
 import { FaBars } from "react-icons/fa";
 import { Outlet, NavLink, Link } from "react-router-dom";
@@ -15,6 +15,10 @@ export default function Root() {
     setDarkMode(!darkMode);
     changeTheme(darkMode ?  themes.light : themes.dark);
   };
+
+  
+  
+
   return (
     <>
       <nav className="navbar bg-primary text-light mb-3">

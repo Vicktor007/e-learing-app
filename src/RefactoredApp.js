@@ -1,7 +1,10 @@
 import './App.css';
 import './index.css'
 // Hooks
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
+
+// context
+import { ThemeContext } from './components/context/themeContext';
 
 // components
 import Title from './components/Title';
@@ -41,7 +44,9 @@ function App() {
     useEffect(() => {
       window.onscroll = () => scrollFuncton();
     }, [])
-    
+
+    // go to top theme context
+    const {theme} = useContext(ThemeContext)
 
     // form states
     const [forms, setForms] = useState({
@@ -111,6 +116,7 @@ const handleCancelRegistrationForm =() => {
   const offersRef = useRef();
 const topRef = useRef()
 
+
   return (
     <>
     
@@ -167,9 +173,10 @@ const topRef = useRef()
       </div>)}
 
       {/* go to top arrow */}
-      {goToTopArrow && <BsArrowUpCircleFill className='goToTopArrow' size={"1.5rem"}
+      {goToTopArrow && <BsArrowUpCircleFill className='gototopArrow' size={"1.5rem"}
       onClick={handleGoToTop}
       style={{ position: "fixed", bottom: 70, right: 30 }}
+      color={theme ===  "dark" ? "#ff9800" : "#7633f9"}
       />}
     </>
   );
